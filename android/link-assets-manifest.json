@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/BeVietnamPro-Black.ttf",
+      "sha1": "95b8e95870dc28d48da6223087e3ac4fdea1a693"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-BlackItalic.ttf",
+      "sha1": "94b4ac7b6f85f3688d99a7f0ab30be7e27d48d0c"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-Bold.ttf",
+      "sha1": "c5a49e284168c75857a138a3cc127c3138f168ee"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-BoldItalic.ttf",
+      "sha1": "882e16acb423d6edbcd9989f6ac505a25fcfc463"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-ExtraBold.ttf",
+      "sha1": "50174122a4b407c845bb55680860289ab02aa6ec"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-ExtraBoldItalic.ttf",
+      "sha1": "c0c95e0ee2a35f3d1bfa4b31b5f277cc5972b9af"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-ExtraLight.ttf",
+      "sha1": "1c723759fd1c83fde03e90bf3631daa67e4ae873"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-ExtraLightItalic.ttf",
+      "sha1": "fc65f0b8f9dc8fe9298e18965eb6f9ca106da35d"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-Italic.ttf",
+      "sha1": "24f4014d5b732d0e207403bd9c3bbede006bee07"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-Light.ttf",
+      "sha1": "8ce20ae60490f66460398b78e34dbdd87c3b955b"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-LightItalic.ttf",
+      "sha1": "e6427328f0933903797319bdbf67ee5116d281ef"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-Medium.ttf",
+      "sha1": "314eecd61a7cc7bc32cb6f33243b7051b51dcead"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-MediumItalic.ttf",
+      "sha1": "a8cde5ba04cc2e5436d7ed9e221019935de6625f"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-Regular.ttf",
+      "sha1": "bbe77399f926405ea95c6b9b51f49179e39dca20"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-SemiBold.ttf",
+      "sha1": "fbc3f74acbebba504d93be3006bdb3fe552b5e4c"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-SemiBoldItalic.ttf",
+      "sha1": "fd1ce1639f5b573ebba52b32e53cf16b2cc01e77"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-Thin.ttf",
+      "sha1": "713633e53e60eb4212d76f0be6b63497fa71c3b6"
+    },
+    {
+      "path": "assets/fonts/BeVietnamPro-ThinItalic.ttf",
+      "sha1": "426ac9e3e36136eb5e1f50f28a30aace5715d42d"
+    }
+  ]
+}
