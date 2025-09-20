@@ -3,6 +3,7 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
+  StyleSheet,
   TouchableOpacity,
 } from 'react-native';
 import React from 'react';
@@ -11,14 +12,15 @@ import sty from '../../themes/sty';
 import {useBottomTabBarHeight} from '@react-navigation/bottom-tabs';
 import MonthSalary from './components/MonthSalary';
 import WeekSalary from './components/WeekSalary';
+import { appColors } from '../../constants/appColors';
 
 const Worksheet = () => {
   const tabBarHeight = useBottomTabBarHeight();
   return (
     <GradientBackground>
-      <HeaderBack title="Bảng công" />
-      <DividerCustom styles={sty.mt_12} />
-      <KeyboardAvoidingView
+      <HeaderBack title="Bán hàng" style = {styles.HeaderBack} />
+      <DividerCustom  />
+      {/* <KeyboardAvoidingView
         style={sty.flex_1}
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
         <TouchableOpacity
@@ -36,9 +38,16 @@ const Worksheet = () => {
             <WeekSalary />
           </ScrollView>
         </TouchableOpacity>
-      </KeyboardAvoidingView>
+      </KeyboardAvoidingView> */}
     </GradientBackground>
   );
 };
 
 export default Worksheet;
+
+const styles = StyleSheet.create({
+  HeaderBack: {
+   backgroundColor: appColors.white,
+   boxShadow: '0px 0px 10px 0px rgba(0, 0, 0, 0.1)',
+  },
+});
