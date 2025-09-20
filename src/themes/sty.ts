@@ -328,6 +328,15 @@ const sty = StyleSheet.create({
   h_full: {
     height: '100%',
   },
+  w_4: {
+    width: 4,
+  },
+  w_8: {
+    width: 8,
+  },
+  w_12: {
+    width: 12,
+  },
   w_16: {
     width: 16,
   },
@@ -349,8 +358,17 @@ const sty = StyleSheet.create({
   w_48: {
     width: 48,
   },
+  h_4: {
+    height: 4,
+  },
+  h_8: {
+    height: 8,
+  },
   h_16: {
     height: 16,
+  },
+  h_12: {
+    height: 12,
   },
   h_20: {
     height: 20,

@@ -7,6 +7,8 @@ import sty from '../../themes/sty'
 import TextComponent from '../TextComponent/TextComponent'
 import { fontFamilies } from '../../constants/fontFamilies'
 import { appColors } from '../../constants/appColors'
+import { useNavigation } from '@react-navigation/native'
+import { HOME_ROUTES, ROOT_ROUTES } from '../../routes'
 
 interface UtilityAppComponentProps {
   onPress: (routeKey: string) => void
@@ -20,6 +22,7 @@ interface UtilityAppComponentProps {
 const UtilityAppComponent = (props: UtilityAppComponentProps) => {
   const { onPress, utilityApp, title, stylesProps, itemRow, gap } = props
   // const utilityApp = LIST_UTILITY_APP
+  const navigate = useNavigation<any>();
 
   // Chia dữ liệu thành các nhóm 4 items
   const chunkArray = (array: any[], chunkSize: number) => {
@@ -46,7 +49,9 @@ const UtilityAppComponent = (props: UtilityAppComponentProps) => {
       ]}
       onPress={() => {
         // Handle navigation here
-        console.log('Navigate to:', item.routeKey)
+        navigate.navigate(ROOT_ROUTES.HOME_STACK, {
+          screen: HOME_ROUTES.PRODUCT,
+        })
       }}
     >
       

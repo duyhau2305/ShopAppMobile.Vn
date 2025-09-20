@@ -11,6 +11,7 @@ import Collaborator from '../screens/ Collaborator/ Collaborator';
 import InfoCollaborator from '../screens/ Collaborator/InfoCollaborator';
 import Request from '../screens/Request/Request';
 import NotificationFile from '../screens/Notification/NotificationFile';
+import Product from '../screens/Product/Product';
 
 
 const Stack = createNativeStackNavigator<any>();
@@ -67,6 +68,13 @@ const HomeStack = () => {
       <Stack.Screen
         name={HOME_ROUTES.REQUEST}
         component={Request}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name={HOME_ROUTES.PRODUCT}
+        component={Product}
         options={{
           headerShown: false,
         }}
