@@ -49,8 +49,8 @@ const UtilityAppComponent = (props: UtilityAppComponentProps) => {
       ]}
       onPress={() => {
         // Handle navigation here
-        navigate.navigate(ROOT_ROUTES.HOME_STACK, {
-          screen: HOME_ROUTES.PRODUCT,
+        navigate.navigate(item.routeKey, {
+          screen: item.screen,
         })
       }}
     >

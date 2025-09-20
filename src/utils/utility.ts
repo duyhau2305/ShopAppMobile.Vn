@@ -1,6 +1,7 @@
 //List utility app
 import IMAGES from "../assets/images"
-import { BOTTOM_TAB_ROUTES, ROOT_ROUTES } from "../routes"
+import { BOTTOM_TAB_ROUTES ,HOME_ROUTES, ROOT_ROUTES} from "../routes"
+import Product from "../screens/Product/Product"
 
 export const LIST_UTILITY_APP = [
   {
@@ -31,13 +32,15 @@ export const LIST_UTILITY_APP = [
     id: 5,
     name: 'Hàng hoá',
     icon: IMAGES.COMMON.icon_product,
-    routeKey: "PRODUCT",
+    routeKey:  ROOT_ROUTES.HOME_STACK,
+    screen:HOME_ROUTES.PRODUCT,
   },
   {
     id: 6,
     name: 'Kiểm kho',
     icon: IMAGES.COMMON.icon_inventory_count,
     routeKey: "INVENTORY_COUNT",
+    screen:Product,
   },
   {
     id: 7,
@@ -57,7 +60,7 @@ export const LIST_UTILITY_TRANSACTION = [
     id: 1,
     name: 'Bán hàng',
     icon: IMAGES.COMMON.icon_sell,
-    routeKey: BOTTOM_TAB_ROUTES.SELL,
+    routeKey: BOTTOM_TAB_ROUTES.SELL,    
   },
   {
     id: 2,
