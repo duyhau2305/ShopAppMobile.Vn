@@ -13,4 +13,6 @@ export const appColors = {
   danger: '#e74c3c',
   green: '#20BF35',
   orange: '#F0A01F',
+  active: '#28B116',
+  inactive: '#DA4646',
 };

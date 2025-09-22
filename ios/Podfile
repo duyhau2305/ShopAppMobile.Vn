@@ -37,8 +37,8 @@ target 'ShopApp' do
   use_frameworks! :linkage => :static
   $RNFirebaseAsStaticFramework = true
 
-  pod 'FirebaseCore'
-  pod 'FirebaseMessaging'
+  # pod 'FirebaseCore'
+  # pod 'FirebaseMessaging'
 
   use_react_native!(
     :path => config[:reactNativePath],

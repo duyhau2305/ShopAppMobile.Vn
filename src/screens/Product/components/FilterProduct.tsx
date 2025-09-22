@@ -1,42 +1,28 @@
-import {
-    Keyboard,
+import {   
     KeyboardAvoidingView,
-    Platform,
-    ScrollView,
+    Platform, 
     TouchableOpacity,
     StyleSheet,
     Image,
-    View,
-    Text,
-    NativeScrollEvent,
-    NativeSyntheticEvent,
-    
+    View,  
   } from 'react-native';
   import React, {useCallback, useEffect, useState} from 'react';
-  import TextComponent from '../../components/TextComponent/TextComponent';
+  import {TextComponent} from '../../../components';
   import {useSafeAreaInsets} from 'react-native-safe-area-context';
   import {
     GradientBackground,
     HeaderBack,
     DividerCustom,
-    ButtonLoadMore,
-  } from '../../components';
-  import sty from '../../themes/sty';
-  import {getListNotificationAPI} from '../../apis/notification';
-  import {handleErrorMessage} from '../../utils/helpers';
-  import {useAppDispatch, useAppSelector} from '../../redux/hooks';
-  import {
-    setListNotification,
-    setPaginationNotification,
-  } from '../../redux/slices/notificationSlice';
-  
-  import NoData from '../../components/NoData';
-  import {useFocusEffect} from '@react-navigation/native';
-import IMAGES from '../../assets/images';
-import { fontFamilies } from '../../constants/fontFamilies';
-import { fetchFilterProduct } from '../../redux/slices/productSlice';
-import ProductList from './components/ProductList';
-import { ProductData } from '../../interfaces/Product/product';
+ 
+  } from '../../../components';
+import sty from '../../../themes/sty';
+import {useAppDispatch, useAppSelector} from '../../../redux/hooks';
+import NoData from '../../../components/NoData';
+import IMAGES from '../../../assets/images';
+import { fontFamilies } from '../../../constants/fontFamilies';
+import { fetchFilterProduct } from '../../../redux/slices/productSlice';
+import ProductList from './ProductList';
+
   
   const Product = () => {
     const dispatch = useAppDispatch();
@@ -89,13 +75,9 @@ import { ProductData } from '../../interfaces/Product/product';
   
     return (
       <GradientBackground>
-        <HeaderBack title="Hàng Hóa" 
-         style={styles.HeaderBack}  
-            onPressRightIcon={() => console.log("Tìm kiếm")}
+        <HeaderBack title="Hàng Hóa" style={styles.HeaderBack}        
             RightIcon={<Image source={IMAGES.COMMON.icon_search} style={[sty.w_20, sty.h_20, sty.objectScaleDown]}/>}
-          
             RightIcon2={<Image source={IMAGES.COMMON.icon_filter} style={[sty.w_20, sty.h_20, sty.objectScaleDown]}/>}
-            onPressRightIcon2={() => console.log("Lọc")}
             section={section}
          />
         <DividerCustom styles={sty.mt_12} />

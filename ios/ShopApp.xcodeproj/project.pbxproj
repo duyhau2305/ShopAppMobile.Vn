@@ -14,12 +14,13 @@
 		206050B1DBAC46EF92D472C1 /* BeVietnamPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 027ABEF9D0744F5D8B28170B /* BeVietnamPro-Italic.ttf */; };
 		4CBCE15F8EAC4083BEE63BEC /* BeVietnamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F87F2470AE8E46C59C662360 /* BeVietnamPro-Light.ttf */; };
 		5D9B05E604254D1F92B569E5 /* BeVietnamPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32A0CA62F43E4FC9BE807524 /* BeVietnamPro-SemiBoldItalic.ttf */; };
+		5EFF48412E8146130061FF32 /* Pods_ShopApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8295A7AC2E57966046330350 /* Pods_ShopApp.framework */; };
+		5EFF48422E8146130061FF32 /* Pods_ShopApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8295A7AC2E57966046330350 /* Pods_ShopApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		61A65AD5E9CF400FAEA5832C /* BeVietnamPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B08B796C8424DFB9727A1BD /* BeVietnamPro-Black.ttf */; };
 		6C2CFB01BD6643E08DC07760 /* BeVietnamPro-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7375341F38E14337882C59C7 /* BeVietnamPro-MediumItalic.ttf */; };
 		6EFD2D36C6EB4FD8B12F2E59 /* BeVietnamPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A18FD78368EC4AD88A9FC0C2 /* BeVietnamPro-SemiBold.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		958170817F1493E60261FFB5 /* Pods_ShopApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8295A7AC2E57966046330350 /* Pods_ShopApp.framework */; };
 		99523E6A07434ECB900C1AF1 /* BeVietnamPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA84E463BEE0469C964511F0 /* BeVietnamPro-Regular.ttf */; };
 		A1C629A9A4B945BCA9964FF5 /* BeVietnamPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1998F825F881492281BDA666 /* BeVietnamPro-Thin.ttf */; };
 		AAF1EAC44F8D454EBA233E90 /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE2C90E17D094102B6C89511 /* BeVietnamPro-ExtraBoldItalic.ttf */; };
@@ -31,6 +32,20 @@
 		ED6C8FA2E95F49A09829B7A8 /* BeVietnamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CC7CF203972483ABD29716F /* BeVietnamPro-Bold.ttf */; };
 		FA199966864C431D91216C91 /* BeVietnamPro-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF156A4AE4CB4C12B6133BB5 /* BeVietnamPro-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5EFF48432E8146130061FF32 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5EFF48422E8146130061FF32 /* Pods_ShopApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		027ABEF9D0744F5D8B28170B /* BeVietnamPro-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BeVietnamPro-Italic.ttf"; path = "../assets/fonts/BeVietnamPro-Italic.ttf"; sourceTree = "<group>"; };
@@ -68,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				958170817F1493E60261FFB5 /* Pods_ShopApp.framework in Frameworks */,
+				5EFF48412E8146130061FF32 /* Pods_ShopApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +190,7 @@
 				BE34A8F51BA7197F4ECE8250 /* [CP] Embed Pods Frameworks */,
 				FF988E21467FE532AD8431B3 /* [CP] Copy Pods Resources */,
 				877A77D0FD554EC4BC238F40 /* [CP-User] [RNFB] Core Configuration */,
+				5EFF48432E8146130061FF32 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -362,9 +378,10 @@
 			baseConfigurationReference = 71EF440C11D7090E90CA8D1E /* Pods-ShopApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PQ4S338S3K;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ShopApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -378,10 +395,15 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vietapp.shopapp.vn;
 				PRODUCT_NAME = ShopApp;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -391,9 +413,10 @@
 			baseConfigurationReference = 3849C8448E2D7D3222E8F96B /* Pods-ShopApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PQ4S338S3K;
 				INFOPLIST_FILE = ShopApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,9 +429,14 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vietapp.shopapp.vn;
 				PRODUCT_NAME = ShopApp;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -449,7 +477,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -536,7 +564,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

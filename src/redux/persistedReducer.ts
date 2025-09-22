@@ -14,6 +14,7 @@ import timekeepingReducer from './slices/timekeepingSlice';
 import timerReducer from './slices/timerSlice';
 import registerReducer from './slices/registerSlice';
 import sendWifiReducer from './slices/sendWifiSlice';
+import { productReducer } from './slices/productSlice';
 
 const persistConfig = {
   key: 'root',
@@ -58,6 +59,7 @@ export const rootReducer = combineReducers({
   timer: timerReducer,
   register: registerReducer,
   sendWifi: sendWifiReducer,
+  product: productReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

@@ -42,6 +42,7 @@ import { Facebook, Google } from '../../assets/svgs';
 import ButtonComponent from '../Home/components/ButtonComponent';
 import { appColors } from '../../constants/appColors';
 import TextComponent from '../../components/TextComponent/TextComponent';
+import { fontFamilies } from '../../constants/fontFamilies';
 
 
 const Login = () => {
@@ -198,6 +199,7 @@ const Login = () => {
                  <TextComponent title text="OR" styles={{
                   marginBottom: 10,
                   textAlign: 'center',
+                  fontFamily: "BeVietnamPro-Medium",
                 }}/>
               <View style={styles.InputPassword}>
                 <TextInput

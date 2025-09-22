@@ -120,7 +120,12 @@ export const LIST_UTILITY_PRODUCT = [
     icon: IMAGES.COMMON.icon_transfer_product,
     routeKey: "TRANSFER_PRODUCT",
   }
-
-  
-  
 ]
+export const formatCash = (num: number) => {
+  if (!num) {
+    return "";
+  } else {
+    const roundedNum = Math.round(num);
+    return roundedNum.toLocaleString("en-US");
+  }
+};

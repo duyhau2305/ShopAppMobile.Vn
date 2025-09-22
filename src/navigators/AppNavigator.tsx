@@ -45,14 +45,14 @@ const AppNavigator = () => {
     <NavigationContainer>
       <Host>
         <RootStack />
-        {/* <Portal>
+        <Portal>
           <ModalLoading />
           <ModalSuccess />
           <ModalWarningTimekeeping />
           <ModalConfigWifi />
           <Toast />
           <ToastNoti />
-        </Portal> */}
+        </Portal>
       </Host>
     </NavigationContainer>
   );

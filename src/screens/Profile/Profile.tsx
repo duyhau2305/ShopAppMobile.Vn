@@ -42,6 +42,16 @@ const Profile = () => {
   const [avatarError, setAvatarError] = useState<boolean>(false);
 
  
+  const handleLogout = () => {
+    dispatch(resetAuthState());
+    dispatch(resetCollaboratorState());
+    dispatch(resetTakeOffState());
+    dispatch(resetRequestState());
+    dispatch(resetConfigWifiState());
+    dispatch(resetInfoState());
+    dispatch(clearTimer());
+    dispatch(resetTimer());
+  }
   return (
     <GradientBackground>
       <HeaderProfile />
@@ -69,21 +79,24 @@ const Profile = () => {
         itemRow={3} gap={32} title="Đối tác" 
         stylesProps={styles.UtilityAppComponent} />  
         <UtilityAppComponent 
-        onPress={() => {}} 
-        utilityApp={LIST_UTILITY_TRANSACTION} 
-        itemRow={3} gap={32} title="Nhân viên" 
-        stylesProps={styles.UtilityAppComponent} />     
+            onPress={() => {}} 
+            utilityApp={LIST_UTILITY_TRANSACTION} 
+            itemRow={3} gap={32} title="Nhân viên" 
+            stylesProps={styles.UtilityAppComponent} />     
         <UtilityAppComponent 
-        onPress={() => {}} 
-        utilityApp={LIST_UTILITY_TRANSACTION} 
-        itemRow={3} gap={32} title="Báo cáo" 
-        stylesProps={styles.UtilityAppComponent} /> 
+          onPress={() => {}} 
+          utilityApp={LIST_UTILITY_TRANSACTION} 
+          itemRow={3} gap={32} title="Báo cáo" 
+          stylesProps={styles.UtilityAppComponent} /> 
           <UtilityAppComponent 
-        onPress={() => {}} 
-        utilityApp={LIST_UTILITY_TRANSACTION} 
-        itemRow={3} gap={32} title="Cài đặt chung" 
-        stylesProps={styles.UtilityAppComponent} />          
-        
+            onPress={() => {}} 
+            utilityApp={LIST_UTILITY_TRANSACTION} 
+            itemRow={3} gap={32} title="Cài đặt chung" 
+            stylesProps={styles.UtilityAppComponent} />   
+            <TouchableOpacity onPress={handleLogout} style={styles.ButtonLogout}>
+              <TextDisplay text="Đăng xuất" color="#444A55" fontWeight="semibold" />
+            </TouchableOpacity>       
+            
        
       </ScrollView>
     </GradientBackground>
@@ -118,5 +131,9 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     shadowColor: '#000',  
     boxShadow: '0 2px 16px 0 rgba(0, 0, 0, 0.08)',
+  },
+  IconLogout: {
+    width: 24,
+    height: 24,
   },
 });

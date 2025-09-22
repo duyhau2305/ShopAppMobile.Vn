@@ -7,6 +7,7 @@ import UpdateProfile from '../screens/UpdateProfile/UpdateProfile';
 import FontSize from '../screens/FontSize/FontSize';
 import ConfigWifi from '../screens/ConfigWifi/ConfigWifi';
 import InfoConfigWifi from '../screens/ConfigWifi/InfoConfigWifi';
+import Product from '../screens/Product/Product';
 
 const Stack = createNativeStackNavigator<any>();
 
@@ -51,6 +52,13 @@ const ProfileStack = () => {
       <Stack.Screen
         name={PROFILE_ROUTES.INFO_CONFIG_WIFI}
         component={InfoConfigWifi}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name={PROFILE_ROUTES.PRODUCT}
+        component={Product}
         options={{
           headerShown: false,
         }}

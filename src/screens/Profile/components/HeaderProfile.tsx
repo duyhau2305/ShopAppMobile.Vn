@@ -18,24 +18,8 @@ const HeaderHome = () => {
   const dispatch = useAppDispatch();
   const insets = useSafeAreaInsets();
   const navigate = useNavigation<any>();
-  const {user, role, employee} = useAppSelector(state => state.auth);
-  const {totalUnRead} = useAppSelector(state => state.notification);
-  const [avatarError, setAvatarError] = useState<boolean>(false);
 
-  const handleGetTotalUnRead = useCallback(async () => {
-    try {
-      const res = await getTotalUnReadAPI();
-      dispatch(setTotalUnRead(res?.data?.data?.count || 0));
-    } catch (error) {
-      handleErrorMessage(error);
-    }
-  }, [dispatch]);
 
-  useFocusEffect(
-    useCallback(() => {
-      handleGetTotalUnRead();
-    }, [handleGetTotalUnRead]),
-  );
 
   return (
     <View
